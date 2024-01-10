@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+} 
+
+/* ####################### HTML Elment styling ######################## */
+
+
+html{
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+ul li{
+    list-style: none;
+}
+
+h1 ,h2 ,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+   
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+
+
+/* ################## Utality Classes################# */
+
+.text-red{
+    color:#e63946;
+
+}
+.text-white{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333333;
+}
+
+.text-gray{
+    color: #555555;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.lg-heading{
+    font-size:  2.7rem; ;
+    font-weight: 500;
+}
+.container{
+    max-width: 1050px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 4em;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+.btn-secondary{
+    background-color: #fff;
+    border-radius: 1.5em;
+    border: 2px solid #e63946;
+    cursor: pointer;
+}
+.btn-secondary:hover{
+    background-color: #e63946;
+    color: #fff;
+}
+.bg-dark{
+    background-color: #263238;
+}
+/* ################### Header styling#################### */
+
+
+.header {
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('../Images/header-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: white; */
+    
+}
+.navigation{
+    padding: 0rem;
+}
+.navigation .logo,
+.navigation a{
+    color: white;
+}
+
+.navigation .logo{
+    float: left;
+    width: 8%;
+    /* font-size: 0rem; */
+    /* margin-top: 1rem; */
+    /* padding-bottom: 0; */
+    padding: 0;
+}
+.navigation .list-items{
+    float: right;
+    margin-top: 2rem;
+}
+.navigation .list-items .list-item{
+    display: inline-block;
+    /* border: 2px solid red; */
+    /* padding: 1rem; */
+    
+    margin: 1rem;
+}
+.navigation .list-items .list-item:hover{
+    border-bottom: 2px solid white;
+    transition-duration: 0.2s;
+}
+.navigation::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############## Header Content Style ################# */
+.content{
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    
+    
+} 
+ 
+/* .content button{
+    color: orange;
+    background: white;
+    font-size: 2rem;
+    padding: 0.7em 1.3em;
+    border-radius: 2em;
+    margin-top: 0.3em;
+} */
+
+.content h1{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+/* ##################### SHOWCASE SECTION STYLING ############################## */
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);;
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box ,.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box ,.row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    position: relative;
+    height: 100%;
+}
+
+.row .text-box{
+    height: 100%;
+    padding: 3rem;
+    background: #fff;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-box h2{
+    text-transform: uppercase;
+}
+
+
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+/* ################## Feature section ##################### */
+.feature{
+    position: relative;
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    /* height: 200px; */
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.box-wrapper .box{
+    width: 33.33333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+    
+}
+.box-1, .box-3{
+    background-color: #263238;
+    color: #fff;
+}
+
+.box-2{
+    background-image: radial-gradient( circle 830px at 95.6% -5%,  rgba(244,89,128,1) 0%, rgba(223,23,55,1) 90% );
+    color: #fff;
+}
+
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ##################### FOOTER STYLING ####################### */
+
+
+.footer{
+    background-color: #263238;
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+
+/* ####################### ABOUT PAGE STYLING ########################### */
+
+.about{
+    padding: 5rem 0;
+}
+
+.about-heading::after{
+    content: '';
+    border: 3px solid #e63946;
+    display: block;
+    width: 100%;
+}
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* #################### COUNTS STYLING ###################### */
+
+.counts{
+    margin-top: 3rem;
+    /* margin-left: 3rem; */
+}
+
+.count-items{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.count-items span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+.count-items p{
+    font-weight: 700;
+    color: #555;
+    font-size: 1.7rem;
+}
+
+/* #################### BANNER ################# */
+
+.banner{
+    background-image: radial-gradient( circle 830px at 95.6% -5%,  rgba(244,89,128,1) 0%, rgba(223,23,55,1) 90% );
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+    box-shadow: 5px 5px 10px #0000003f;
+}
+
+.banner p{
+    float: left;
+    width: 50%;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+.banner a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem ;
+    font-size: 2rem;
+    padding: 0.3em 2.5em;
+    border: 2px solid white;
+    text-align: center;
+    width: 30%;
+    letter-spacing: 0.5rem;
+    float: right;
+  
+    margin-right: 4rem;
+   
+}
+
+.banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ################## CONTACT US FORM #################### */
+
+
+.contact-form{
+    background: #f7f7f7;
+    padding: 5rem 0;
+}
+    
+
+.form-wrapper .company-address{
+    /* border: 2px dotted blue; */
+    width: 49%;
+    height: 760px;
+    float: left;
+    padding: 2rem 1rem;
+    background: #fff;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+/* ####################### COMPANY ADDRESS ############################ */
+
+.form-wrapper .company-address  i{
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.form-wrapper .company-address h2{
+    display: inline-block ;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img{
+    object-fit: cover;
+    min-height: 40rem;
+    max-width: 90%;
+    object-position: right;
+}
+
+/* ############### FORM STYLING ################# */
+
+.form-wrapper .form{
+    font-size: 1.6rem;
+    /* border: 2px dotted brown; */
+    width: 49%;
+    height: 760px;
+    float:right;
+    padding: 2rem 1rem;
+    background: #fff;
+}
+
+.form-wrapper h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #ee3946;
+    width: 100%;
+    clear: both;
+}
+
+.form-wrapper .form label{
+    display: block;
+    width: 100%;
+}
+
+.form-wrapper .form input{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label::after{
+    content: '*';
+    color: #e63946;
+}
+
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ####################### Media Queries ############################ */
+
+
+@media(max-width:450px){
+    html{
+        /* font-size: 8px; */
+        font-size: 50%;
+    }
+    
+    .navigation .logo , .navigation .list-items {
+        float: none;
+        display: block;
+        width: 100% ;
+        text-align: center;
+    }
+    .navigation .logo{
+        width: 20%;
+        text-align: center;
+        
+    }
+    .header .content h1{
+        display: none;
+    }
+    .row1 .img-box ,.row2 .text-box{
+        float: none;
+        width: 100%;
+        content: '';
+        display: block;
+    }
+}
